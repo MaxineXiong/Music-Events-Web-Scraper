@@ -23,6 +23,8 @@ The **Music Events Web Scraper** is a web scraping program engineered to extract
 
 ## Repository Structure
 
+The repository is structured as follows:
+
 ```
 MusicEventsWebScraper/
 ├── main.py
@@ -48,26 +50,24 @@ MusicEventsWebScraper/
 
 To run the web scraping program on your local computer, please follow these steps:
 
-1. **Clone the repository:**
+1) Clone this repository to your local machine using the following command:
     ```
-    git clone https://github.com/yourusername/MusicEventsWebScraper.git
-    cd MusicEventsWebScraper
+    git clone https://github.com/MaxineXiong/Music-Events-Web-Scraper.git
     ```
-    
-2. **Install the required packages:**
+2) Download and install the latest version of [Python](https://www.python.org/downloads/) for your system. Make sure to select the "Add Python to PATH" option during the installation process.
+3) Navigate to the project folder using File Explorer, type `cmd` in the address bar at the top of the window, and press Enter. This will open Command Prompt in the project folder.
+4) Install the required packages by executing the following command in the Command Prompt:
     ```
     pip install -r requirements.txt
     ```
     
-3. **Configure email settings:**
-   
+5) **Configure email settings**:
    Open `main.py` and update the `sender_email`, `recipient_email`, and `sender_password` variables with your own email credentials and app password.
-     
-4. **Configure database settings:**
-   
+
+6) **Configure database settings**:
    Update the `[DATABASE-NAME]`, `[USERNAME]`, and `[PASSWORD]` values in the `move_to_pgDB` method with your PostgreSQL database credentials.
      
-5. **Run the web scraping program:**
+7) Now launch the web scraping program by entering the following command in the Command Prompt:
     ```
     python main.py
     ```
