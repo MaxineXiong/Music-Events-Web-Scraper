@@ -97,3 +97,8 @@ I would like to acknowledge the following organizations and technologies for the
 - [**Psycopg2**](https://www.psycopg.org/docs/): For enabling efficient interaction with PostgreSQL databases, ensuring secure and reliable data storage and retrieval.
 
 Each of these tools has contributed to the functionality and efficiency of this project, and their ongoing development support is greatly appreciated.
+
+<br>
+
+### Disclaimer
+The data extracted by the Music Events Web Scraper is solely for project showcasing purposes. It will not be sold to any third party, nor will it be used for any commercial activities beyond the scope of project demonstration and academic presentation. All data handling will adhere to ethical guidelines and respect privacy considerations.
