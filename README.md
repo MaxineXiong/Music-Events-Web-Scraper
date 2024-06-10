@@ -28,6 +28,7 @@ The repository is structured as follows:
 ```
 MusicEventsWebScraper/
 ├── main.py
+├── email-html-body-template.txt
 ├── "sample outputs"/
 │   ├── 🎶 Unmissable Music Events Coming Up in Sydney, Australia! 🌟.eml
 │   └── music-events-sydney-australia-20240609220753.csv
@@ -38,6 +39,7 @@ MusicEventsWebScraper/
 ```
 
 - **main.py**: This file is the core script containing the Python code responsible for scraping music events data, emailing the CSV output, and handling database operations.
+- **email-html-body-template.txt**: The file serves as a template for the body of the output marketing email. It contains HTML markup along with placeholders (typically formatted as %s) that allow for dynamic insertion of specific content, such as the city name, at runtime.
 - **sample outputs/**: This directory houses example outputs from the scraper, including an output CSV file and a marketing email, showcasing the functionality of the program.
 - **requirements.txt**: This file lists all the required Python modules and packages necessary to run the desktop app. You can install these dependencies on your local computer by running the command `pip install -r requirements.txt`.
 - **.gitignore**: Prevents specific files and directories from being tracked by Git, maintaining the cleanliness of the repository by excluding temporary files and sensitive information.
