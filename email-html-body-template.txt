@@ -2,14 +2,14 @@
   <body>
       <p>Dear Customer,</p>
       <p>We're thrilled to bring you the latest pulse on %s's
-         vibrant music scene! 🎉 This season promises an electrifying
+         vibrant music scene! This season promises an electrifying
          lineup of concerts, live performances, and musical
          extravaganzas that you won't want to miss.</p>
       <p>Enclosed in the attached CSV file, you'll find detailed
          information on dates, venues, and artists lighting up
          %s in the coming days. Whether you're a fan of rock, jazz,
          pop, or electronic, there's something
-         for everyone to enjoy. 🎷🎸🎤</p>
+         for everyone to enjoy.</p>
       <p>Feel free to explore the attached file for a comprehensive
          guide to making the most of %s's rich musical offerings.
          From intimate gigs to grand musical festivals, it's
@@ -21,6 +21,6 @@
          journey!</p>
       <p>Warm regards</p>
       <p>Your Music Event Adviser</p>
-      <p>Let the music play! 🎵</p><br>
+      <p>Let the music play!</p><br>
   </body>
 </html>
