@@ -405,34 +405,13 @@ class MusicEventScraper:
 
         # Define the email subject line, incorporating city and country names
         subject = "🎶 Unmissable Music Events Coming Up in {}, {}! 🌟".format(self.city.title(), self.country.title())
-        # Construct the HTML body of the email
-        body = """<html lang="en">
-                    <body>
-                        <p>Dear Customer,</p>
-                        <p>We're thrilled to bring you the latest pulse on %s's
-                           vibrant music scene! 🎉 This season promises an electrifying
-                           lineup of concerts, live performances, and musical
-                           extravaganzas that you won't want to miss.</p>
-                        <p>Enclosed in the attached CSV file, you'll find detailed
-                           information on dates, venues, and artists lighting up
-                           %s in the coming days. Whether you're a fan of rock, jazz,
-                           pop, or electronic, there's something
-                           for everyone to enjoy. 🎷🎸🎤</p>
-                        <p>Feel free to explore the attached file for a comprehensive
-                           guide to making the most of %s's rich musical offerings.
-                           From intimate gigs to grand musical festivals, it's
-                           time to mark your calendar and experience the magic of
-                           music like never before!</p>
-                        <p>Should you have any questions or require further
-                           information, please don't hesitate to reach out.
-                           We're here to ensure you have an unforgettable musical
-                           journey!</p>
-                        <p>Warm regards</p>
-                        <p>Your Music Event Adviser</p>
-                        <p>Let the music play! 🎵</p><br>
-                    </body>
-                  </html>
-               """%(self.city.title(), self.city.title(), self.city.title())
+
+        # Read the content from the email template file
+        with open('email-html-body-template.txt', 'r') as file:
+            body = file.read()
+        # Format the email template string to construct the HTML body of the email
+        body = body%(self.city.title(), self.city.title(), self.city.title())
+
         # Set up Email account credentials and SMTP server details
         sender_email = "[SENDER-EMAIL-ADDRESS]"
         recipient_email = "[RECIPIENT-EMAIL-ADDRESS]"
