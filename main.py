@@ -538,7 +538,7 @@ class MusicEventScraper:
 
 
 
-# Main block to execute the program
+# Check if this script is being run directly (and not imported as a module)
 if __name__ == '__main__':
     # Create a MusicEventScraper object to scrap data for all available music events...
     # ...that will occur in Sydney, Australia
