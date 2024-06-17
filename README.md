@@ -8,7 +8,7 @@
 
 ## Project Description
 
-The **Music Events Web Scraper** is a web scraping program engineered to extract detailed information about music events from the [**Eventbrite**](http://eventbrite.com.au), a popular event management and ticketing platform. Users can specify a country and a city to gather attribute data on upcoming music events, including event names, venues, addresses, dates and times, durations, prices, booking statuses, and web URLs. The collected data is subsequently saved in a CSV file, which is then attached to a marketing email sent to designated recipients. Additionally, the data is transferred to a local PostgreSQL database for efficient storage and management.
+The **Music Events Web Scraper** is a web scraping program engineered to extract detailed information about music events from [**Eventbrite**](http://eventbrite.com.au), a popular event management and ticketing platform. Users can specify a country and a city to gather attribute data on upcoming music events, including event names, venues, addresses, dates and times, durations, prices, booking statuses, and web URLs. The collected data is subsequently saved in a CSV file, which is then attached to a marketing email sent to designated recipients. Additionally, the data is transferred to a local PostgreSQL database for efficient storage and management.
 
 <br>
 
