@@ -448,7 +448,7 @@ class MusicEventScraper:
     def move_to_pgDB(self):
         """Method to transfer the scraped data to a local PostgreSQL database.
         """
-        # Connect to a local PostgresSQL database with credentials and specifics
+        # Connect to a local PostgreSQL database with credentials and specifics
         conn = psycopg2.connect("dbname='[DATABASE-NAME]' user='[USERNAME]' password='[PASSWORD]' \
                                  port='5432' host='localhost'")
         # Enable autocommit to ensure that changes are immediately saved to the database
@@ -517,10 +517,10 @@ class MusicEventScraper:
 
         # Provide feedback on the success of the data migration
         if records_count > 0:
-            print('Data successfully migrated to your PostgresSQL database.')
+            print('Data successfully migrated to your PostgreSQL database.')
             print('Records count: ' + str(records_count))
         else:
-            print('No records added to your PostgresSQL database.')
+            print('No records added to your PostgreSQL database.')
 
         # Close the connection to the database
         conn.close()
@@ -533,7 +533,7 @@ class MusicEventScraper:
         self.scrap_data()
         # Call method to send email with the CSV file attachment
         self.send_email()
-        # Call method to migrate data to a local PostgresSQL database
+        # Call method to migrate data to a local PostgreSQL database
         self.move_to_pgDB()
 
 
