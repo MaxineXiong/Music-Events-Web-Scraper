@@ -31,7 +31,7 @@ The repository is structured as follows:
 MusicEventsWebScraper/
 ├── main.py
 ├── email-html-body-template.txt
-├── "sample outputs"/
+├── sample outputs/
 │   ├── 🎶 Unmissable Music Events Coming Up in Sydney, Australia! 🌟.eml
 │   └── music-events-sydney-australia-20240609220753.csv
 ├── requirements.txt
