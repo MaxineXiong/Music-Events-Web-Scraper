@@ -247,6 +247,7 @@ class MusicEventScraper:
             # Find an <ul> tag with a specific data-testid attribute...
             # ...and extract its plain text as duration value
             duration = soup.find('ul', {'data-testid': "highlights"}).text.strip()
+            duration = duration.replace('Event lasts', '').strip()
         except:
             # Set duration to None if no matching <ul> is found or another error occurs
             duration = None
@@ -369,7 +370,7 @@ class MusicEventScraper:
         # Create a soup object for a random page
         random_page_soup = self.create_soup(url_key + '?page=2')
         # Extract the total number of pages from the random page
-        total_page_number = int(random_page_soup.find('li', {'data-spec': 'pagination-parent'}) \
+        total_page_number = int(random_page_soup.find('li', {'data-testid': 'pagination-parent'}) \
                                 .text.split('of')[-1].strip())
 
         # Iterate through all listing pages and scrap data for each event
