@@ -323,7 +323,7 @@ class MusicEventScraper:
         Arguments:
         - event_url (str): The URL of an event page to scrap data from.
         """
-        if event_url is not None:
+        if event_url:
             # Create a soup object for the event page
             event_page_soup = self.create_soup(event_url)
             # Extract the lowest price, highest price, venue, address,...
